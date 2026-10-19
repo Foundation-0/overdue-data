@@ -102,6 +102,7 @@ the repository. Europe PMC adds papers over time, so a re-run may read a differe
 | [`AGENTS.md`](AGENTS.md) | Guide for AI agents working here |
 | [`CLAUDE.md`](CLAUDE.md) | Points Claude Code to AGENTS.md |
 | [`notes/scouting-2026-10-19.md`](notes/scouting-2026-10-19.md) | The research so far, with sources |
+| [`notes/reports/`](notes/reports/README.md) | the complete scouting reports, kept as written, and the fact-check |
 | [`pilot/pilot_fulltext.py`](pilot/pilot_fulltext.py) | ProteomeXchange pilot: accessions from full text, checked with PROXI |
 | [`pilot/pilot_fulltext_geo.py`](pilot/pilot_fulltext_geo.py) | GEO pilot: accessions from full text, checked on GEO's pages |
 | [`pilot/pilot_pxd.py`](pilot/pilot_pxd.py) | Earlier version that used Europe PMC's annotations, kept to show why they miss unreleased datasets |
