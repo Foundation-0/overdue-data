@@ -1,0 +1,31 @@
+name: check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: The pilot scripts compile
+        run: python -m py_compile pilot/*.py
+      - name: No accession number is committed
+        run: |
+          if git grep -nE "PXD[0-9]{6}|GSE[0-9]+"; then
+            echo "Accession numbers found. Commit counts only (see the policy in README.md)."
+            exit 1
+          fi
+      - name: No per-dataset results file is committed
+        run: |
+          if git ls-files | grep -E '^results/.*\.json$'; then
+            echo "Per-dataset results must not be committed."
+            exit 1
+          fi

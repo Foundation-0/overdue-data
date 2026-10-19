@@ -1,0 +1,7 @@
+# Per-dataset results name papers and accessions. Never commit them.
+results/*.json
+
+# Caches of downloaded pages and API answers
+cache/
+.cache/
+__pycache__/
