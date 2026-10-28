@@ -112,3 +112,5 @@ the repository. Europe PMC adds papers over time, so a re-run may read a differe
 ## Licence
 
 Apache License 2.0 (see [LICENSE](LICENSE)), as for Foundation0's other repositories.
+
+Draft work for #2: [implementation and remaining checks](notes/extra-archives.md).
