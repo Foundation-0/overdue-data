@@ -17,6 +17,8 @@ jobs:
           python-version: "3.12"
       - name: The pilot scripts compile
         run: python -m py_compile pilot/*.py
+      - name: Offline unit tests
+        run: python -m unittest discover -s tests -v
       - name: No accession number is committed
         run: |
           if git grep -nE "PXD[0-9]{6}|GSE[0-9]+"; then
