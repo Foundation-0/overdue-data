@@ -17,9 +17,11 @@ jobs:
           python-version: "3.12"
       - name: The pilot scripts compile
         run: python -m py_compile pilot/*.py
+      - name: Offline unit tests
+        run: python -m unittest discover -s tests -v
       - name: No accession number is committed
         run: |
-          if git grep -nE "PXD[0-9]{6}|GSE[0-9]+"; then
+          if git grep -nE "PXD[0-9]{6}|GSE[0-9]+|MTBLS[0-9]+|ST[0-9]{6}|PRJ(NA|EB|DB)[0-9]+"; then
             echo "Accession numbers found. Commit counts only (see the policy in README.md)."
             exit 1
           fi
