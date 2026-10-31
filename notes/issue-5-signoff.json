@@ -1,0 +1,17 @@
+{
+  "issue": 5,
+  "status": "awaiting-human-review",
+  "recipient_scope": "One archive curator, selected by the human signer",
+  "required_evidence": "Private case list outside git; blinded false-positive review; archive-specific public reporting policy; aggregate counts only.",
+  "signoffs": [
+    {
+      "archive": null,
+      "signer": null,
+      "reviewed_at": null,
+      "cases_reviewed": null,
+      "decision": null,
+      "approved_message_hash": null,
+      "sent_at": null
+    }
+  ]
+}
