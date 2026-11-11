@@ -1,0 +1,27 @@
+{
+    "creators": [
+        {
+            "name": "Arifuddin, Ahraz"
+        }
+    ],
+    "title": "overdue-data",
+    "description": "<p>This repository finds datasets that published papers say were deposited in a public archive but are still unreleased more than 18 months later, so the archives can follow them up.</p><p>Status: pilot, claimed, not peer reviewed.</p><p>In a claimed check of 500 open-access papers from January to March 2025, 10 of 694 ProteomeXchange datasets were still unreleased, and 1 of 987 GEO datasets was still private. The counts were confirmed from saved outputs and re-checked on 19 Oct 2026, and have not been reviewed by a person.</p><p>Directed by Ahraz Arifuddin</p><p>Researched and verified by different model families across Gemini, Claude, Grok, OpenAI, and Muse</p>",
+    "upload_type": "software",
+    "license": "Apache-2.0",
+    "keywords": [
+        "data-availability",
+        "foundation0",
+        "metascience",
+        "open-data",
+        "proteomics",
+        "research-integrity"
+    ],
+    "related_identifiers": [
+        {
+            "identifier": "https://github.com/Foundation-0/overdue-data",
+            "relation": "isSupplementTo",
+            "scheme": "url",
+            "resource_type": "software"
+        }
+    ]
+}
